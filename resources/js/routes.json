@@ -1,0 +1,18 @@
+{
+    "debugbar.openhandler": "_debugbar\/open",
+    "debugbar.clockwork": "_debugbar\/clockwork\/{id}",
+    "debugbar.telescope": "_debugbar\/telescope\/{id}",
+    "debugbar.assets.css": "_debugbar\/assets\/stylesheets",
+    "debugbar.assets.js": "_debugbar\/assets\/javascript",
+    "debugbar.cache.delete": "_debugbar\/cache\/{key}\/{tags?}",
+    "": "api\/user",
+    "sheeps.index": "api\/sheeps",
+    "sheeps.store": "api\/sheeps",
+    "sheeps.update": "api\/sheeps\/{sheep}",
+    "sheeps.destroy": "api\/sheeps\/{sheep}",
+    "events.index": "api\/events",
+    "events.store": "api\/events",
+    "reports.index": "api\/reports",
+    "reports.store": "api\/reports",
+    "home": "report"
+}
