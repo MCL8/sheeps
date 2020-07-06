@@ -38,10 +38,7 @@ class SheepController extends Controller
             $corral = $request->input('corral');
             $day = $request->input('day');
 
-            $sheep = new Sheep();
-            $sheep->corral = $corral;
-            $sheep->created_at = now();
-            $sheep->updated_at = now();
+            $sheep = new Sheep(['corral' => $corral, 'created_at' => now(), 'updated_at' => now()]);
 
             $sheep->save();
             $sheep_id = $sheep->id;
