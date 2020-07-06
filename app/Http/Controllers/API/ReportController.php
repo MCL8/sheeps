@@ -32,10 +32,7 @@ class ReportController extends Controller
         $day = $request->input('day');
 
         $report = new Report();
-
         $report->makeReport($day);
-
-
 
         return response('the report is created', 201);
     }
