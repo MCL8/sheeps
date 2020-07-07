@@ -3,7 +3,7 @@
         <ul class="list-group">
             <li class="list-group-item" v-for="report in reports" :key="report.day">
                 <b>День {{ report.day }}</b> <br>
-                всего овечек: {{ report.sheeps_alive}} <br>
+                всего овечек: {{ report.sheeps_total}} <br>
                 убитых овечек: {{ report.sheeps_dead}} <br>
                 живых овечек: {{ report.sheeps_alive}} <br>
                 наиболее населенный загон: {{ report.corral_max}} <br>
