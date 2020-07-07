@@ -88,13 +88,13 @@
                 setInterval(this.nextDay, 10000);
             },
             nextDay() {
-                this.makeReport(this.day);
-                this.day++;
-                localStorage.day = this.day;
                 this.addSheep();
                 if (this.day % 10 === 0) {
                     this.slaughterSheep();
                 }
+                this.makeReport(this.day);
+                this.day++;
+                localStorage.day = this.day;
             },
             addSheep() {
                 let keys = Object.keys(this.sheeps);

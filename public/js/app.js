@@ -2075,14 +2075,15 @@ __webpack_require__.r(__webpack_exports__);
       setInterval(this.nextDay, 10000);
     },
     nextDay: function nextDay() {
-      this.makeReport(this.day);
-      this.day++;
-      localStorage.day = this.day;
       this.addSheep();
 
       if (this.day % 10 === 0) {
         this.slaughterSheep();
       }
+
+      this.makeReport(this.day);
+      this.day++;
+      localStorage.day = this.day;
     },
     addSheep: function addSheep() {
       var _this2 = this;
@@ -2708,7 +2709,7 @@ var render = function() {
           _vm._v(" "),
           _c("br"),
           _vm._v(
-            "\n            всего овечек: " + _vm._s(report.sheeps_alive) + " "
+            "\n            всего овечек: " + _vm._s(report.sheeps_total) + " "
           ),
           _c("br"),
           _vm._v(
